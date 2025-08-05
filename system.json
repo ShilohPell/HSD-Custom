@@ -1,0 +1,23 @@
+{
+    "id": "HSD",
+    "title": "Hc Svnt Dracones",
+    "description": "Modified version of HSD for custom use",
+    "version": "0.0.1",
+    "authors": [
+        {"name": "ShilohPell"}
+    ],
+    "compatibility": {
+        "minimum": "10",
+        "verified": "11"
+    },
+    "esmodules": ["module/main.mjs"],
+    "styles": ["styles/actor-sheet-pc.css"],
+    "actorTypes": ["player", "npc"],
+    "documentTypes": {
+        "Actor": {
+            "player": {},
+            "npc": {},
+            "mook": {}
+        }
+    }
+}

@@ -1,0 +1,61 @@
+<form class="char-sheet sheet-frame">
+    <section class="sheet-body">
+        <div class="main-sheet">
+            <div class="floating-elements">
+                <div class="Bio">
+                    <div class="profile-picture">
+                        <img class="profile-img" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" height="100" width="100"/>
+                    </div>
+                    <div class="biographic-panel">
+                        {{#each this.actor.system.bio as |bio field|}}
+                            {{! formGroup (lookup ../systemFields.bio field) value=(lookup ../document.system.bio field) }}
+                            {{!log systemFields}}
+                            {{log _prepareContext}}
+                        {{/each}}
+                    </div>
+                </div>
+                <div class="status-panel">
+
+                </div>
+            </div>
+            <div class="middle-bar">
+                <div class="stat-panel">
+
+                </div>
+                <div class="defences-panel">
+
+                </div>
+            </div>
+            <div class="bottom-bar">
+                <div class="abilities-panel">
+
+                </div>
+                <div class="education-panel">
+
+                </div>
+            </div>
+        </div>
+        <div class="sidebar">
+            <div class="proficiency-list">
+                {{#each this.actor.system.proficiency as |proficiency category|}}
+                    <h3>{{category}}</h3>
+                    {{#each proficiency as |score profname|}}
+                        <div class="prof-container">
+                            <label class="resource-label">{{profname}}</label>
+                            <div class="prof-radio-group">
+                                <input type="radio" name="{{profname}}-radio" id="{{profname}}-0">
+                                <input type="radio" name="{{profname}}-radio" id="{{profname}}-1">
+                                <input type="radio" name="{{profname}}-radio" id="{{profname}}-2">
+                                <input type="radio" name="{{profname}}-radio" id="{{profname}}-3">
+                                <input type="radio" name="{{profname}}-radio" id="{{profname}}-4">
+                            </div>
+                        </div>
+                    {{/each}}
+                {{/each}}
+            </div>
+            <div class="corp-list">
+
+            </div>
+        </div>
+    </section>
+</form>

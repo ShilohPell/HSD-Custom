@@ -1,0 +1,48 @@
+{
+  "HFS.HFSPLAYER.FIELDS": {
+    "charname": {
+      "label": "Foo",
+      "hint": "This is foo."
+    },
+    "age": {
+      "label": "Foo",
+      "hint": "This is foo."
+    },
+    "gender": {
+      "label": "Foo",
+      "hint": "This is foo."
+    },
+    "sex": {
+      "label": "Foo",
+      "hint": "This is foo."
+    },
+    "height": {
+      "label": "Foo",
+      "hint": "This is foo."
+    },
+    "eyes": {
+      "label": "Foo",
+      "hint": "This is foo."
+    },
+    "family": {
+      "label": "Foo",
+      "hint": "This is foo."
+    },
+    "species": {
+      "label": "Foo",
+      "hint": "This is foo."
+    },
+    "morphism": {
+      "label": "Foo",
+      "hint": "This is foo."
+    },
+    "familyperk": {
+      "label": "Foo",
+      "hint": "This is foo."
+    },
+    "motivation": {
+      "label": "Foo",
+      "hint": "This is foo."
+    }
+  }
+}
