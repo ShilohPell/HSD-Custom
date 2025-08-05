@@ -18,15 +18,15 @@ export class HSDPlayerSheet extends HAM(ActorSheet) {
     }
 
     /** @override */
-    async getData() {
-        const data = await super.getData();
+    async _prepareContext(options) {
+        const context = await super._prepareContext(options);
         // Add any extra data processing here if needed
-        return data;
+        return context;
     }
 
     /** @override */
-    activateListeners(html) {
-        super.activateListeners(html);
-        // Add custom event listeners here if needed
+    _onRender(context, options) {
+         this.element.querySelector("input[name=something]").addEventListener("click", /* ... */);
+        // We will deal with reset later
     }
 }
